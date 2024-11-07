@@ -18,4 +18,4 @@ def create_table():
     cursor.execute(create_string)
 
 # only create table once
-create_table()
+# create_table()
