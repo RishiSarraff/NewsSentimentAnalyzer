@@ -1,11 +1,12 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.chrome.options import Options
+import os
 from scraperMethods import scrapeSCOTUS, scrapeCongress, scrapeFactCheck, scrapeCurrElection
 
 cnnWebsiteUrl = "https://www.cnn.com/" # website URL
 
-chromeDriverPath = "../chromedriver" # pathway to our chrome driver
+chromeDriverPath = os.getenv("locationOfChromeDriver") # pathway to our chrome driver
 
 chromeService = webdriver.ChromeService(executable_path=chromeDriverPath) # the service for the path based on new syntax
 
@@ -17,6 +18,7 @@ cnnChromeOptions.page_load_strategy = 'eager'  # load only the initial HTML
 temp_custom_user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"
 # user agents to help with excessive and quick interaction
 cnnChromeOptions.add_argument(f"--user_agent={temp_custom_user_agent}")
+
 
 driver = webdriver.Chrome(service=chromeService, options=cnnChromeOptions) # create our driver object to pass along
 
