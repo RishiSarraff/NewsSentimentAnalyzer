@@ -24,6 +24,7 @@ driver = webdriver.Chrome(service=chromeService, options=cnnChromeOptions) # cre
 
 listOfSubURLs = ["politics/supreme-court", "politics/congress", "politics/fact-check", "election/2024"]
 # we iterate through each of the 4 suburls of interest and based on the methods we design, we scrape them as necessary
+# new comment
 
 for subURL in listOfSubURLs:
     indexOfSlash = subURL.index("/")
