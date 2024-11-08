@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.chrome.options import Options
 import os
-from scraperMethods import scrapeSCOTUS, scrapeCongress, scrapeFactCheck, scrapeCurrElection
+from scraperMethods import scrapeCNNSections
 
 cnnWebsiteUrl = "https://www.cnn.com/" # website URL
 
@@ -24,24 +24,18 @@ cnnChromeOptions.add_argument(f"--user_agent={temp_custom_user_agent}")
 
 driver = webdriver.Chrome(service=chromeService, options=cnnChromeOptions) # create our driver object to pass along
 
-listOfSubURLs = ["politics/supreme-court"]
-# , "politics/congress", "politics/fact-check", "election/2024"
-# we iterate through each of the 4 suburls of interest and based on the methods we design, we scrape them as necessary
+listOfSubURLs = ["politics/", "politics/supreme-court",
+                 "politics/congress", "politics/fact-check",
+                 "election/2024", "world/europe/ukraine",
+                 "world/middleeast/israel"]
+# we iterate through each of the 7 suburls of interest and based on the methods we design, we scrape them as necessary
 # new comment
 
 for subURL in listOfSubURLs:
     indexOfSlash = subURL.index("/")
     stringOfInterest = subURL[indexOfSlash+1:]
     url = cnnWebsiteUrl + subURL
-    match stringOfInterest:
-        case 'supreme-court':
-            scrapeSCOTUS(driver, url)
-        case 'congress':
-            scrapeCongress(driver, url)
-        case 'fact-check':
-            scrapeFactCheck(driver, url)
-        case '2024':
-            scrapeCurrElection(driver, url)
+    scrapeCNNSections(driver, url, stringOfInterest)
 # a switch case for our scrapers to redirect them to modularized code.
 
 driver.quit() # we want to end the driver ourselves
