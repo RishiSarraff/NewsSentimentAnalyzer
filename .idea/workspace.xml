@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="937186d5-6b75-49ed-ad0e-360f17ea5dc7" name="Changes" comment="added database" />
+    <list default="true" id="937186d5-6b75-49ed-ad0e-360f17ea5dc7" name="Changes" comment="added database">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNNScraper/CNNDB.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNNScraper/CNNDB.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNNScraper/cnnArticles.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNNScraper/mainScraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNNScraper/mainScraper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNNScraper/scraperMethods.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNNScraper/scraperMethods.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
