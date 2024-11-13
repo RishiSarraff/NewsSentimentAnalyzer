@@ -1,4 +1,5 @@
 import sqlite3
+import csv
 
 conn = sqlite3.connect("cnnArticles.db")
 
@@ -41,3 +42,19 @@ def insert_into_DB(cnnObject):
 
 # only create table once
 #create_table()
+def to_csv(csv_filename):
+
+    cursor.execute("SELECT * FROM CNNArticles")
+    rows = cursor.fetchall()
+
+    column_names = [description[0] for description in cursor.description]
+
+    with open(csv_filename, 'w', newline='', encoding='utf-8') as csv_file:
+        writer = csv.writer(csv_file)
+        writer.writerow(column_names)
+        writer.writerows(rows)
+
+    print(f"Exported to {csv_filename}")
+
+
+to_csv("cnn_articles.csv")
