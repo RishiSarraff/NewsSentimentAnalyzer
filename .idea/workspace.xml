@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="937186d5-6b75-49ed-ad0e-360f17ea5dc7" name="Changes" comment="added database">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNNScraper/cnnArticles.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNNScraper/mainScraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNNScraper/mainScraper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNNScraper/scraperMethods.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNNScraper/scraperMethods.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNNScraper/cnnArticles.db" beforeDir="false" afterPath="$PROJECT_DIR$/CNNScraper/cnnArticles.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoxScraper/FoxDB.py" beforeDir="false" afterPath="$PROJECT_DIR$/FoxScraper/FoxDB.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoxScraper/mainScraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/FoxScraper/mainScraper.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
