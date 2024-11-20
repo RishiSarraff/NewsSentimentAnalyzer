@@ -24,7 +24,7 @@ cnnChromeOptions.add_argument(f"--user_agent={temp_custom_user_agent}")
 
 driver = webdriver.Chrome(service=chromeService, options=cnnChromeOptions) # create our driver object to pass along
 
-listOfSubURLs = ["politics/", "politics/supreme-court",
+listOfSubURLs = [
                  "politics/congress", "politics/fact-check",
                  "election/2024", "world/europe/ukraine",
                  "world/middleeast/israel"]
