@@ -1,5 +1,9 @@
 News Sentiment Analyzer:
 
+<div align="center">
+  <img src="images/foxvscnn.webp" alt="Fox Vs. CNN Image" title="Fox News vs. CNN" style="width: 100%; max-width: 800px;">
+</div>
+
 Context:
 After elections we see a surge in bipartisanship and attitudes becoming more extreme with recent elections warranting threats of violence and harmful behaviors. This necessitates the need to understand the source of voters' and citizens' frustrations and alignments with particular parties. While there are uncontrollable features like family, friends, and more, one major source of American politics has always been News sources and their overly biased "unbiased" news articles. 
 
