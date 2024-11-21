@@ -1,26 +1,80 @@
-News Sentiment Analyzer:
+<h1 align="center">News Sentiment Analyzer</h1>
 
 <div align="center">
-  <img src="images/foxvscnn.webp" alt="Fox Vs. CNN Image" title="Fox News vs. CNN" style="width: 100%; max-width: 800px;">
+  <img src="images/foxvscnn.webp" alt="Fox Vs. CNN Image" title="Fox News vs. CNN" style="width: 100%; max-width: 800px; border-radius: 10px;">
 </div>
 
-Context:
-After elections we see a surge in bipartisanship and attitudes becoming more extreme with recent elections warranting threats of violence and harmful behaviors. This necessitates the need to understand the source of voters' and citizens' frustrations and alignments with particular parties. While there are uncontrollable features like family, friends, and more, one major source of American politics has always been News sources and their overly biased "unbiased" news articles. 
+<hr>
 
-Problem Statement:
-With the 2024 election coming to a wrap, we want to see how two major news channels, CNN and Fox News, that are very much Democrat and Republican-leaning, respectively, influence voter decisions. 
+<h2>Context</h2>
+<p>
+After elections, there is often a surge in bipartisanship and extreme attitudes, with recent events leading to threats of violence and harmful behaviors. 
+This highlights the need to understand the sources of voters' and citizens' frustrations and alignments with specific political parties.
+</p>
+<p>
+While uncontrollable factors like family and social circles play a role, one significant influence on American politics is news media and its often-biased portrayal of "unbiased" information.
+</p>
 
-Approach:
-To dictate this and figure out a quantitative way to measure something subjective, we decided to go to the websites, scrape hundreds of articles on different political topics from each of the news network websites, and store them in a SQLite database. After scraping using the Python package Selenium, we insert it into a lightweight SQLite database, from which we can convert it into a CSV file. 
+<hr>
 
-After converting it into a CSV file, we move toward the sentiment analysis portion of the project where we use tools like TextBlob or Vader to carry out the analysis and use plotting libraries like matplotlib and seaborn to generate data analysis for the standardized data that we formulated. 
+<h2>Problem Statement</h2>
+<p>
+With the 2024 election wrapping up, we aim to examine how two major news networks — <strong>CNN</strong> (Democrat-leaning) and <strong>Fox News</strong> (Republican-leaning) — influence voter decisions.
+</p>
+<p>
+To address this, we developed a quantitative method to measure subjective political sentiment using tools like web scraping, data analysis, and sentiment analysis.
+</p>
 
-Steps:
-1. Scrape using Selenium
-2. Store into SQLite Database
-3. Save to CSV
-4. Conduct analysis using pandas, TextBlob/Vader
-5. Create Presentation.
+<hr>
 
-Technologies:
+<h2>Approach</h2>
+<p>Our approach involves the following steps:</p>
+<ol>
+  <li><strong>Data Collection</strong>: 
+    Scrape political articles from CNN and Fox News websites using the Python Selenium library and store the scraped data in a lightweight <strong>SQLite database</strong>.
+  </li>
+  <li><strong>Data Conversion</strong>: 
+    Export the data from SQLite into a structured <strong>CSV file</strong> for easier analysis.
+  </li>
+  <li><strong>Sentiment Analysis</strong>: 
+    Use tools like <strong>TextBlob</strong> or <strong>Vader</strong> to analyze sentiment in the articles.
+  </li>
+  <li><strong>Data Visualization</strong>: 
+    Utilize <strong>matplotlib</strong> and <strong>seaborn</strong> to generate insightful visualizations from the standardized sentiment data.
+  </li>
+  <li><strong>Presentation</strong>: 
+    Create a detailed presentation showcasing the analysis and findings.
+  </li>
+</ol>
 
+<hr>
+
+<h2>Steps</h2>
+<ol>
+  <li>Scrape articles using <strong>Selenium</strong>.</li>
+  <li>Store the data into a <strong>SQLite database</strong>.</li>
+  <li>Export the data to a <strong>CSV file</strong>.</li>
+  <li>Analyze sentiment using <strong>pandas</strong>, <strong>TextBlob</strong>, or <strong>Vader</strong>.</li>
+  <li>Visualize results using <strong>matplotlib</strong> and <strong>seaborn</strong>.</li>
+</ol>
+
+<hr>
+
+<h2>Technologies Used</h2>
+<ul>
+  <li><strong>Web Scraping</strong>: Selenium</li>
+  <li><strong>Database</strong>: SQLite</li>
+  <li><strong>Data Analysis</strong>: pandas, TextBlob, Vader</li>
+  <li><strong>Visualization</strong>: matplotlib, seaborn</li>
+  <li><strong>Data Handling</strong>: CSV</li>
+</ul>
+
+<hr>
+
+<h2>Deliverables</h2>
+<ul>
+  <li>A structured <strong>SQLite database</strong> of news articles.</li>
+  <li>A <strong>CSV file</strong> for sentiment analysis.</li>
+  <li>Sentiment analysis visualizations (e.g., bar plots, line charts).</li>
+  <li>A <strong>presentation</strong> summarizing findings and insights.</li>
+</ul>
