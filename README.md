@@ -37,7 +37,7 @@ To address this, we developed a quantitative method to measure subjective politi
     Export the data from SQLite into a structured <strong>CSV file</strong> for easier analysis.
   </li>
   <li><strong>Sentiment Analysis</strong>: 
-    Use tools like <strong>TextBlob</strong> or <strong>Vader</strong> to analyze sentiment in the articles.
+    Use tools like <strong>TextBlob</strong> to analyze sentiment in the articles.
   </li>
   <li><strong>Data Visualization</strong>: 
     Utilize <strong>matplotlib</strong> and <strong>seaborn</strong> to generate insightful visualizations from the standardized sentiment data.
@@ -54,7 +54,7 @@ To address this, we developed a quantitative method to measure subjective politi
   <li>Scrape articles using <strong>Selenium</strong>.</li>
   <li>Store the data into a <strong>SQLite database</strong>.</li>
   <li>Export the data to a <strong>CSV file</strong>.</li>
-  <li>Analyze sentiment using <strong>pandas</strong>, <strong>TextBlob</strong>, or <strong>Vader</strong>.</li>
+  <li>Analyze sentiment using <strong>pandas</strong>, <strong>TextBlob</strong>.</li>
   <li>Visualize results using <strong>matplotlib</strong> and <strong>seaborn</strong>.</li>
 </ol>
 
@@ -64,7 +64,7 @@ To address this, we developed a quantitative method to measure subjective politi
 <ul>
   <li><strong>Web Scraping</strong>: Selenium</li>
   <li><strong>Database</strong>: SQLite</li>
-  <li><strong>Data Analysis</strong>: pandas, TextBlob, Vader</li>
+  <li><strong>Data Analysis</strong>: pandas, TextBlob</li>
   <li><strong>Visualization</strong>: matplotlib, seaborn</li>
   <li><strong>Data Handling</strong>: CSV</li>
 </ul>
