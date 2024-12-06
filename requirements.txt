@@ -6,3 +6,5 @@ matplotlib==3.9.2
 urllib3==2.2.3
 requests==2.32.3
 asyncio==3.4.3
+quarto==0.1.0
+textblob==0.18.0.post0
